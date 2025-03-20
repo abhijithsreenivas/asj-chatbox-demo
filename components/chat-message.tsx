@@ -4,6 +4,7 @@ import {User} from 'lucide-react'
 import {BotAvatar} from '@/components/bot-avatar'
 import {Message} from 'ai'
 import {GitHubProfileCard} from '@/components/github-profile-card'
+import Markdown from 'react-markdown'
 
 export function ChatMessage({message}: {message: Message}) {
 	const {role, content, toolInvocations} = message
@@ -28,7 +29,8 @@ export function ChatMessage({message}: {message: Message}) {
 				{/* Message bubble */}
 				<div
 					className={`rounded-2xl p-4 ${role === 'user' ? 'bg-black text-white' : 'bg-gray-50 text-black'}`}>
-					{content && <p className="leading-relaxed">{content}</p>}
+					<p className="leading-relaxed"></p>
+					{content && (<Markdown>{content}</Markdown>)}
 
 					{/* Tool calls and results */}
 					{hasToolCalls && (

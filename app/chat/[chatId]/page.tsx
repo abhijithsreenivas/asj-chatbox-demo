@@ -6,7 +6,7 @@ import {Message} from 'ai'
 // Properly typed mock data
 const chatData: Record<string, {title: string; messages: Message[]}> = {
 	'1': {
-		title: 'GEN AI Chat box powered by Vercel SDK',
+		title: 'GEN AI Chat box powered by Vercel AI SDK',
 		messages: [
 			{id: '1', role: 'user', content: "What's vercel AI SDK"},
 			{

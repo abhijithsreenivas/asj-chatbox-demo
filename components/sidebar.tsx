@@ -5,9 +5,8 @@ import {Logo} from '@/components/logo'
 
 // Static list of chat conversations for the sidebar navigation
 const chats = [
-	{id: '1', title: 'How to learn React'},
-	{id: '2', title: 'Explain quantum computing'},
-	{id: '3', title: 'Write a poem about coding'}
+	{id: '1', title: 'Ask Questions to ASJ'},
+	{id: '2', title: 'AI Development Questions'}
 ]
 
 // Sidebar component that displays navigation and chat history
@@ -21,7 +20,7 @@ export function Sidebar({activeChatId}: {activeChatId?: string}) {
 
 			{/* New chat button section */}
 			<div className="p-4">
-				<Link href="/chat" passHref prefetch>
+				<Link href="/chat/1" passHref prefetch>
 					<Button
 						variant="outline"
 						className="w-full justify-start rounded-full border border-gray-200 text-black hover:bg-gray-50">
@@ -53,7 +52,7 @@ export function Sidebar({activeChatId}: {activeChatId?: string}) {
 
 			<div className="border-t border-gray-100 p-4">
 				<div className="text-center text-xs text-gray-400">
-					FrontendTrail © 2025
+					ASJ © 2025
 				</div>
 			</div>
 		</div>

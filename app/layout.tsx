@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-	title: 'FrontendTrail - AI Assistant for Developers',
+	title: 'ASJ - AI Assistant for Developers',
 	description:
 		'Elegant AI assistant with intuitive interface and seamless experience',
 	metadataBase: new URL('https://frontendtrail.vercel.app')
