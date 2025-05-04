@@ -49,7 +49,7 @@ export function ChatInterface({
 				{messages.length === 0 ? (
 					<div className="flex h-full items-center justify-center">
 						<div className="text-center">
-							<h1 className="mb-3 text-2xl font-medium">Ask me anything</h1>
+							<h1 className="mb-3 text-2xl font-medium">Hello Abhijith, Ask me anything</h1>
 							<p className="leading-relaxed text-gray-500">
 								Get lightning-fast answers to your development questions.
 							</p>

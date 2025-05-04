@@ -1,5 +1,5 @@
 import {Button} from '@/components/ui/button'
-import {PlusIcon, MessageSquare, Airplay} from 'lucide-react'
+import {PlusIcon, MessageSquare, Airplay, MonitorPause } from 'lucide-react'
 import Link from 'next/link'
 import {Logo} from '@/components/logo'
 
@@ -53,6 +53,14 @@ export function Sidebar({activeChatId}: {activeChatId?: string}) {
 						<button className={`flex w-full items-start rounded-xl p-3 text-left transition-colors hover:bg-gray-50`}>
 							<Airplay className='mr-2 mt-0.5 h-4 w-4 text-gray-400'/>
 							<span className="truncate text-sm">Open ASJ KPI Dashboard</span>
+						</button>
+					</Link>
+
+					{/* Financial App Dashboard Lovable */}
+					<Link href={`https://jet-finance-glimpse.lovable.app/`} target="_blank" rel="noopener noreferrer">
+						<button className={`flex w-full items-start rounded-xl p-3 text-left transition-colors hover:bg-gray-50`}>
+							<MonitorPause className='mr-2 mt-0.5 h-4 w-4 text-gray-400'/>
+							<span className="truncate text-sm">Financial Dashboards</span>
 						</button>
 					</Link>
 
